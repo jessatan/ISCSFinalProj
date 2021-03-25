@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+#Rays{
+    animation: rotate 10s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+#Ball{
+    animation: side-to-side 1s infinite;
+}
+
+@keyframes side-to-side{
+    from{
+        
+    }
+}

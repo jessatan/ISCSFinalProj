@@ -1,0 +1,36 @@
+.Sun svg {
+    position: relative;
+    animation: side-to-side 1s linear infinite;
+}
+
+#Rays{
+    animation: rotate 10s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+/*
+#Ball{
+    animation: side-to-side 1s infinite;
+}
+*/
+
+@keyframes side-to-side{
+    0%{
+        left: 0%;
+    }
+    50%{
+        left: 2%;
+    }
+    100%{
+        left: 0%;
+    }
+}

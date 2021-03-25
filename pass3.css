@@ -1,0 +1,44 @@
+.hero {
+  display: grid;
+  grid-template-columns: 38vw 1fr;
+  align-items: center;
+}
+.hero svg {
+  width: 20vw;
+  animation: roll 2s forwards;
+  position: relative;
+}
+.hero h1 {
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  /* Complete the animation rules to fulfill the specificiations */
+  animation-name: swipe-in 1s;
+}
+@keyframes roll {
+  0%{
+    left:0%;
+    transform: rotateZ(0deg);
+  }
+  50% {
+    left:50%;
+    transform: rotateZ(180deg);
+  }
+  75% {
+    left:50%;
+    transform: scale(1.2);
+  }
+  100%{
+    left:50%;
+    transform: scale(1);
+  }
+}
+
+@keyframes swipe-in {
+  /* Complete the keyframes to fulfill the specificiations */
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}

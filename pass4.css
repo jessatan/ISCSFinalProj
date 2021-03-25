@@ -1,0 +1,51 @@
+.svgwaves {
+  /* Complete the animation rules to fulfill the specificiations */
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-name: draw-and-fill 1s linear forwards;
+}
+
+@keyframes draw-and-fill {
+  /* Complete the keyframes to fulfill the specificiations */
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill: #226C8C;
+    }
+}
+
+/*
+header {
+  position: relative;
+}
+
+header: before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  background-color: red;
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+    Complete the animation rules to fulfill the specificiations
+  animation-name: swipe-bg ;
+}
+*/
+
+/*
+@keyframes swipe-bg {
+   Complete the keyframes to fulfill the specificiations 
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+*/
+
